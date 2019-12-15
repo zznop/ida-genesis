@@ -22,4 +22,4 @@ After auto-analysis:
 
 After running `pcr-branch-table`:
 
-[![Scripted Branch Table Analysis](screenshots/pcr-branch-table-before.png "After")]
+[![Scripted Branch Table Analysis](screenshots/pcr-branch-table-after.png "After")]
