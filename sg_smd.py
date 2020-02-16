@@ -224,7 +224,11 @@ def accept_file(li, filename):
 
     # Read in console name and ensure it contains SEGA
     li.seek(0x100)
-    console_name = li.read(16).decode('utf-8')
+    try:
+        console_name = li.read(16).decode('utf-8')
+    except UnicodeError:
+        return 0
+
     if 'SEGA' not in console_name.upper():
         return 0
 
